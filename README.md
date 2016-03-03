@@ -11,10 +11,8 @@ SSHService ssh = new SSHService(userInfo, "192.168.0.100");
 
 ssh.connect();
 
-ssh.exec("cd ~/myFolder/");
-String fileListString = ssh.exec("ls");
-
-ssh.exec("mr -rf myFolder/");
+ssh.exec("cd ~/logs/");
+String tailLog = ssh.exec("tail service.log");
 
 ssh.close();
 
