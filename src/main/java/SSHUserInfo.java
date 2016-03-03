@@ -12,7 +12,7 @@ import com.jcraft.jsch.UserInfo;
  *
  * @author ivan.miranda
  */
-public abstract class SSHUserInfo implements UserInfo{
+public class SSHUserInfo implements UserInfo{
 
 	private final String senha;
 	private final String usuario;
